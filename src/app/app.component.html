@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+   Value : {{ title }}!
+   <br>
+   Value from Child : {{goodbye}}
+  </h1>
+</div>
+
+<h2>Below is the child component: </h2>
+<div id="child-container">
+<app-child [datafromparent] = title (event) ='setDataFromChild($event)'></app-child>
+</div>
+
